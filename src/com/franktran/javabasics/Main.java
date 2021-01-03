@@ -1,11 +1,11 @@
 package com.franktran.javabasics;
 
-import java.io.PrintStream;
+import java.io.Console;
 
 public class Main {
 
     public static void main(String[] args) {
-        PrintStream ps = System.out;
-        ps.printf("Hello, My name is Frank");
+        Console console = System.console();
+        console.printf("Hello, My name is Frank");
     }
 }
