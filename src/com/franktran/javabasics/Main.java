@@ -1,13 +1,13 @@
 package com.franktran.javabasics;
 
-import java.io.PrintStream;
+import java.io.Console;
 
 public class Main {
 
     public static void main(String[] args) {
-        PrintStream ps = System.out;
+        Console console = System.console();
         String name = "Frank";
-        ps.printf("Hello, My name is %s\n", name);
-        ps.printf("%s is learning how to write Java\n", name);
+        console.printf("Hello, My name is %s\n", name);
+        console.printf("%s is learning how to write Java\n", name);
     }
 }
