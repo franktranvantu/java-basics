@@ -6,8 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         Console console = System.console();
-        String name = "Frank";
-        console.printf("Hello, My name is %s\n", name);
-        console.printf("%s is learning how to write Java\n", name);
+        String name = console.readLine("Enter your name: ");
+        String adjective = console.readLine("Enter an adjective: ");
+        console.printf("%s is very %s", name, adjective);
     }
 }
