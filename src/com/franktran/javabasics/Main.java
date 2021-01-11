@@ -12,7 +12,9 @@ public class Main {
         String name = console.readLine("Enter a name: ");
         String adjective = console.readLine("Enter an adjective: ");
         String noun = console.readLine("Enter a noun: ");
-        if (name.equalsIgnoreCase("dork")) {
+        if (name.equalsIgnoreCase("dork") ||
+            name.equalsIgnoreCase("jerk") ||
+            name.equalsIgnoreCase("nerd")) {
             console.printf("That language is not allowed. Exiting.");
             System.exit(0);
         }
