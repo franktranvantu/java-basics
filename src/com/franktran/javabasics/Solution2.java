@@ -1,20 +1,21 @@
 package com.franktran.javabasics;
 
+import java.io.Console;
+
 /**
  * @author frank.tran
  */
 public class Solution2 {
 
     public static void main(String[] args) {
-        // Now uncomment and correct the second line.
-        // If you do not see the error, click submit and use preview tab to see the compiler output.
+        Console console = System.console();
+        // TODO:  1. Create a new String named place and assign it a value of your choosing.
+        String place = "Vietnam";
 
-        String firstName = "Gordon";
+        // TODO:  2. Using the provided console object,
+        //           prompt the user "What is your first name?" and store that in a variable
+        String firstName = console.readLine("What is your first name? ");
 
-        String lastName = "Sumner";
-
-        // console.printf("Hello %s", firstName)
-
-        // band = console.readLine("Which band?  ");
+        // TODO:  3. Print out to the console "Hello <FIRST_NAME>!  Welcome to <PLACE>."
     }
 }
