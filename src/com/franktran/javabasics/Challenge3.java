@@ -5,11 +5,14 @@ import java.io.Console;
 /**
  * @author frank.tran
  */
-public class Solution1 {
+public class Challenge3 {
 
     public static void main(String[] args) {
-        // Create an integer that stores "number of people" ( Use camel case). Set the value to 3.
+        // Inside your if block, after printing, exit the program.
         Console console = System.console();
         int numberOfPeople = 3;
+        if (numberOfPeople < 4) {
+            console.printf("Your table is ready");
+        }
     }
 }

@@ -5,10 +5,10 @@ import java.io.Console;
 /**
  * @author frank.tran
  */
-public class Solution1 {
+public class Challenge2 {
 
     public static void main(String[] args) {
-        // Create an integer that stores "number of people" ( Use camel case). Set the value to 3.
+        // Add an if statement to see if there are less than 4 people. Then write out to the console, “Your table is ready”
         Console console = System.console();
         int numberOfPeople = 3;
     }
