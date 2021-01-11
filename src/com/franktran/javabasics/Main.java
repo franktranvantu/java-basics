@@ -16,6 +16,6 @@ public class Main {
             System.exit(0);
         }
         String name = console.readLine("Enter your name: ");
-        console.printf("Your name is %s", name)
+        console.printf("Your name is %s", name);
     }
 }
