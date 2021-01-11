@@ -11,13 +11,16 @@ public class Main {
         Console console = System.console();
         String name = console.readLine("Enter a name: ");
         String adjective = console.readLine("Enter an adjective: ");
-        String noun = console.readLine("Enter a noun: ");
-        if (name.equalsIgnoreCase("dork") ||
-            name.equalsIgnoreCase("jerk") ||
-            name.equalsIgnoreCase("nerd")) {
-            console.printf("That language is not allowed. Exiting.");
-            System.exit(0);
-        }
+        String noun;
+        boolean isInvalidWord;
+        do {
+            noun = console.readLine("Enter a noun: ");
+            isInvalidWord = name.equalsIgnoreCase("dork") ||
+                    name.equalsIgnoreCase("jerk");
+            if (isInvalidWord) {
+                console.printf("That language is not allowed. Try again.");
+            }
+        } while (isInvalidWord);
         String adverb = console.readLine("Enter a adverb: ");
         String verb = console.readLine("Enter a verb ending in -ing: ");
 
